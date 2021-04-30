@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  padding: 15px;
+  margin: 15px;
+  background-image: url('https://cdn.discordapp.com/attachments/836363285803827230/837475949788397630/depositphotos_34165847-stock-photo-turquoise-futuristic-background-with-the.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Title{
+  text-align: center;
+}
+.container {
+  display: grid;
+  grid-template-columns: 5.5rem repeat(18, 5.5rem);
+  grid-template-rows: auto repeat(7, 5rem) 2rem 4.95rem 1rem 4.95rem;
+  margin-bottom: 5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.lanthanide {
+  grid-row: 10;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.actinide{
+  grid-row: 12;
+}
+
+.arrow {
+  font-size: 200%;
+}
+
+.element {
+  border: 1px solid black;
+  color: black;
+  line-height: 1;
+  padding: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.element .atomic-number {
+  color: grey;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: -0.05rem;
+  line-height: 1.25;
+}
+.element .name {
+  color: black;
+  font-size: 0.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.element .symbol {
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 1.25;
+  margin-top: 0.25rem;
+  text-align: center;
+}
+.element .atomic-weight {
+  font-size: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.H{
+  background-color: yellow;
+}
+.Li , .Na , .Zn , .In , .Pb, .Mc {
+  background-color: pink;
+}
+.Be , .Mg , .Ga, .Sn, .Bi, .Lv {
+  background-color: #6089B7;
+}
+.Al, .Ge, .Sb , .Po, .Ts {
+  background-color: #D7734A;
+}
+.He {
+  grid-column: 19;
+}
+.B {
+  grid-column: 14;
+}
+.B , .Mn, .Rh, .Ru, .Pt, .Au {
+  background-color: yellow;
+}
+.C , .N , .O, .Fe , .Co , .Pd{
+  background-color: green;
+}
+.F , .Ni , .Ag , .Hg , .Nh {
+  background-color: brown;
+}
+.He , .Ne , .Cu , .Cd , .Tl, .Fl {
+  background-color: purple;
+}
+
+.Si, .As, .Te , .At , .Og, .P , .Se , .I , .Rn , .S , .Br , .Xe , .Fr , .Cl , .Kr , .Cs , .Ra , .Ar , .Rb , .Ba , .Ac , .K , .Sr , .La , .Rf , .Ca , .Y , .Hf , .Db , .Sc , .Zr , .Ta , .Sg , .Ti , .Nb , .W , .Bh , .V , .Mo , .Re , .Hs , .Cr , .Tc , .Os , .Mt , .Ir , .Ds , .Rg , .Cn{
+  background-color: #D7734A;
+}
+
+.Ce, .Pr, .Nd, .Pm, .Sm, .Eu, .Gd, .Tb, .Dy, .Ho, .Er, .Tm, .Yb, .Lu {
+  grid-row: 10;
+}
+.Ce, .Pr, .Nd, .Pm, .Sm, .Eu, .Gd, .Tb, .Dy, .Ho, .Er, .Tm, .Yb, .Lu{
+  background-color: #D7734A;
+}
+.Th, .Pa, .U, .Np, .Pu, .Am, .Cm, .Bk, .Cf, .Es, .Fm, .Md, .No, .Lr {
+  grid-row: 12;
+}
+
+.Th, .Pa, .U, .Np, .Pu, .Am, .Cm, .Bk, .Cf, .Es, .Fm, .Md, .No, .Lr {
+  background-color: #D7734A;
+}
+
+.pageOutline {
+  height: 50%;
+  width: 50%;
+}
+
+.inputelement {
+  display: block;
+  width: 30%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  text-align: center;
 }
